@@ -1,4 +1,4 @@
-# Azure Storage
+# Azure SQL
 
 ## Description / Descrição
 [EN] This repository contain example on how to implement an application using ASP.NET Core 3.0 and Azure SQL.
