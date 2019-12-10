@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestBaseFormSQL", "RestBaseFormSQL\RestBaseFormSQL.csproj", "{DB9FB14E-525E-4E27-822E-3F4B9EAFA806}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB9FB14E-525E-4E27-822E-3F4B9EAFA806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB9FB14E-525E-4E27-822E-3F4B9EAFA806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB9FB14E-525E-4E27-822E-3F4B9EAFA806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB9FB14E-525E-4E27-822E-3F4B9EAFA806}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
