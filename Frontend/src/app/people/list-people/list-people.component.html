@@ -5,8 +5,10 @@
                 <h2>Manage <b>People</b></h2>
             </div>
             <div class="col-sm-6">
-                <a href="#" class="btn btn-success" [routerLink]="['new-person']"><i class="glyphicon glyphicon-plus"></i>
-                    <span>Add New Person</span></a>
+                <a href="#" class="btn btn-success" [routerLink]="['new-person']">
+                    <i class="bi bi-person-plus-fill" style="font-size: 1rem; color: white;"></i>
+                    <span>Add New</span>
+                </a>
             </div>
         </div>
     </div>
@@ -25,10 +27,12 @@
                 <td>{{ person.name }}</td>
                 <td>{{ person.email }}</td>
                 <td>
-                    <a href="javascript:(0);" class="edit" data-toggle="modal"><i class="glyphicon glyphicon-pencil"
-                            data-toggle="tooltip" (click)="onEdit(person.id)" title="Edit"></i></a>
-                    <a href="javascript:(0);" class="delete" data-toggle="modal"><i class="glyphicon glyphicon-remove"
-                            data-toggle="tooltip" (click)="onDelete(person.id)" title="Delete"></i></a>
+                    <a href="javascript:(0);" class="edit" data-toggle="modal">
+                        <i class="bi bi-pencil-fill" data-toggle="tooltip" (click)="onEdit(person.rowKey)" title="Edit"></i>
+                    </a>
+                    <a href="javascript:(0);" class="delete" data-toggle="modal">
+                        <i class="bi bi-trash-fill" data-toggle="tooltip" (click)="onDelete(person.rowKey)" title="Delete"></i>
+                    </a>
                 </td>
             </tr>
         </tbody>
@@ -42,7 +46,7 @@
 <ng-template #deleteModal>
     <div class="modal-body text-center">
         <p>Do you want to confirm?</p>
-        <button type="button" class="btn btn-default" (click)=onConfirmDelete()>Yes</button>
+        <button type="button" class="btn btn-secondary" (click)=onConfirmDelete()>Yes</button>
         &nbsp;
         <button type="button" class="btn btn-primary" (click)=onDeclineDelete()>No</button>
     </div>
